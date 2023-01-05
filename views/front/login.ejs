@@ -1,0 +1,40 @@
+<%- include('../header.ejs')%>
+ <!-- LOGIN START -->
+ <section>
+    <div class="banner" >
+        <div class="container-fluid">
+            <div class="loginban">
+               <br>
+               <center>
+                 <div class="container a" style="padding-top:170px;">
+                   <div class="row">
+                    <% if(success.length > 0){ %>
+                        <div class="alert alert-success">
+                        <%= success %>
+                        </div>
+                    <% } %>
+                    <% if(errMsg.length > 0){ %>
+                        <div class="alert alert-danger">
+                        <%= success %>
+                        </div>
+                    <% } %>
+                   <!-- <div class="col-md-12" style="background:#9e9e9ebf; border-radius: 12px;"> -->
+                   <h4 class="pt-3 text-center" style="color:white;"><i class="fa-solid fa-user"></i> Login</h4>
+                     <form action="/verifyLogin" method="post">
+                         <input type="text" name="email" placeholder="Enter Email" class="form-control mt-3" >
+                         <input type="password" name="password" placeholder="Password" class="form-control mt-2">
+                         <button class="btn mt-3" style="background: #049eb7; "><i class="fa-solid fa-user"></i> Login</button>
+                     </form>
+        
+                     <a href="/register"><p style="color:blur;margin-left: 12px; font-weight: bold;"><u>Create your account</u></p></a>
+                     <br><br>
+                   <!-- </div>  --><!-- col-md-6 end -->
+               </div> <!-- row end -->
+                     <br>
+                 </div><!-- container end -->
+             </center>
+            </div> <!-- loginban end -->
+        </div> <!-- container end -->
+    </div>
+</section>
+<!-- LOGIN END -->

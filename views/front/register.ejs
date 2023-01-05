@@ -1,0 +1,103 @@
+<%- include('../header.ejs')%>
+
+ 
+  <br><br> 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <h2 class="text-center">Registration here</h2><hr>
+            <center><img src="images/signup.jpg" class="img-fluid" style="width:70%;"></center>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h2>Create your account</h2><hr>
+            <% if(message.length > 0){ %>
+                <div class="alert alert-danger">
+                    <%= message %>
+                </div>
+            <% } %>
+            <form action="/admin/registerinsert" method="post">
+                <label>New Name</label>
+                <input type="text" name="Name" placeholder="Your name" class="form-control">
+                <br>
+                <label>E-mail</label>
+                <input type="text" name="Email" placeholder="Enter your email" class="form-control">
+                <br>
+                <label>Password</label>
+                <input type="password" name="Password" placeholder="Create Password" class="form-control">
+                <br>
+                <label>Confirm Password</label>
+                <input type="password" name="Conpassword" placeholder="Confitm Password" class="form-control">
+                <br>
+                <button type="submit" class="btn" style="background:#049eb7; color: whitesmoke;">Sign up</button>
+                <h5><a href="/login">Already have account?</a></h5>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+  <!-- FOOTER START -->
+  <footer class="footer" style="background:#049eb7;">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-4 mt-5 text-center">
+                    <h4>Products</h4>
+                    <p class="mt-5">Shared hosting</p>
+                    <p>VPS hosting</p>
+                    <p>Dedicated hosting</p>
+                    <p>Reseller hosting</p>
+                    <p>WordPress hosting</p>
+                    <p>Managed hosting</p>
+                    <p>Woocommerce hosting</p>
+                </div>
+                <div class="col-md-4 mt-5 text-center">
+                    <h4>Programs</h4>
+                    <p class="mt-5">WordPress</p>
+                    <p>Affiliates</p>
+                    <p>wordPress Hosting Guide</p>
+                    <p>Hosting features</p>
+                    <p>WordPress Guidance</p>
+                    <p>WordPress Design</p>
+                    <p>Managed SEO</p>
+                </div>
+                <div class="col-md-4 foot bg-light text-center">
+                    <h4 class="mt-5">Support</h4>
+                    <p class="mt-5">Chat</p>
+                    <p>Knowledge base</p>
+                    <p>Tutorials</p>
+                    <p>Blueprint</p>
+                    <p>Build & Grow WordPress Site</p>
+                    <p>Bluehost Creators</p>
+                    
+                </div>
+            </div>  <!-- row end -->
+        </div> <!-- container-fluid end -->
+  </footer>
+  <!-- FOOTER START END -->
+
+
+
+  <!-- END PART -->
+  <section class="end mt-3">
+        <div class="container-fluid ">
+            <div>
+                <p class="text-center">This site is protected by reCAPTCHA and the Google <span style="color:#049eb7">Privacy Policy</span> and <span style="color:#049eb7">Terms of Service</span> apply.<br>
+                    <span style="color:#049eb7"><a href="" class="nav-link" style="color:#049eb7"><i class="fa-regular fa-envelope"></i> shivhares2002@gmail.com</a></span>
+                    <span style="color:#049eb7"><a href="https://instagram.com/shashaaaaaank._?igshid=YmMyMTA2M2Y=" class="nav-link" style="color:#049eb7"><i class="fa-brands fa-instagram"></i> Shashank shivhare</a></span></p>
+            </div>
+        </div>  <!-- container-fluid end -->
+  </section>
+  <!-- END PART END -->
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

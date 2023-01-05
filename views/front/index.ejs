@@ -1,0 +1,149 @@
+<%- include('../header.ejs')%>
+    <!-- SLIDER START -->
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="carousel slide" data-bs-ride="carousel" id="a">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#a" data-bs-slide-to="0" class="active"></button>
+                    </div> <!-- carousel-indicators end -->
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/web6.jpg" class="w-100">
+                        </div> <!-- carousel-item end -->
+
+                    </div> <!-- carousel-inner end -->
+
+                </div> <!-- carousel slide end -->
+            </div> <!-- row end -->
+        </div> <!-- container-fluid end -->
+    </section>
+    <!-- SLIDER END -->
+
+
+
+    <!-- IMAGES START -->
+    <section class="images mt-5">
+        <div class="container">
+            <div class="row">
+                <% b.forEach((item)=>{ %>
+                <div class="col-md-4">
+                    <img src="<%= item.image.url %>" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2"><%= item. title %></h5>
+                        <p class="text-center mt-2"><%= item.createdAt.toLocaleDateString() %></p>
+                        <p class="text-center mt-2" style="color: black; font-weight: bold;"><%= item.name %></p>
+                    </div>
+                    <div>
+                        <p class="text-center" style="color: black;"><%= item.description.slice(0,100) %></p>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;"><a class="nav-link" href="/blogDetail/<%= item._id%>">Read more </a></p>
+                            </button></a></center>
+                    <br>
+                </div>
+               <% }) %>
+                <!-- <div class="col-md-4">
+                    <img src="images/drupal.jpg" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2">Just Drupal</h5>
+                    </div>
+                    <div>
+                        <p class="text-center">July 23rd 2022,4:34 pm</p>
+                    </div>
+                    <div>
+                        <p class="text-center overflow" style="text-align: justify;">Google LLC is an American
+                            multinational technology company that focuses on search engine technology, online
+                            advertising, cloud computing, computer software,</p>
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;">Read more</p>
+                            </button></a></center>
+                </div><br>
+                <div class="col-md-4 mt-1">
+                    <img src="images/php.jpg" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2">PHP</h5>
+                    </div>
+                    <div>
+                        <p class="text-center">July 23rd 2022,4:34 pm</p>
+                    </div>
+                    <div>
+                        <p class="text-center overflow" style="text-align: justify;">Google LLC is an American
+                            multinational technology company that focuses on search engine technology, online
+                            advertising, cloud computing, computer software, </p>
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;">Read more</p>
+                            </button></a></center>
+                </div>
+            </div> <!-- row end -->
+
+            <!-- <div class="row mt-5">
+                <div class="col-md-4">
+                    <img src="images/sharepoint.jpg" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2">Play Games</h5>
+                    </div>
+                    <div>
+                        <p class="text-center">July 23rd 2022,4:34 pm</p>
+                    </div>
+                    <div>
+                        <p class="text-center overflow" style="text-align: justify;">Google LLC is an American
+                            multinational technology company that focuses on search engine technology, online
+                            advertising, cloud computing, computer software, quantum computing, </p>
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;">Read more</p>
+                            </button></a></center>
+                </div><br>
+                <div class="col-md-4 mt-1">
+                    <img src="images/web6.jpg" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2">S\W Developer</h5>
+                    </div>
+                    <div>
+                        <p class="text-center">July 23rd 2022,4:34 pm</p>
+                    </div>
+                    <div>
+                        <p class="text-center overflow" style="text-align: justify;">Google LLC is an American
+                            multinational technology company that focuses on search engine technology, online
+                            advertising, cloud computing, computer software</p>
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;">Read more</p>
+                            </button></a></center>
+                </div><br>
+                <div class="col-md-4 mt-1">
+                    <img src="images/5.jpg" class="img-fluid shadow-lg">
+                    <div>
+                        <h5 class="text-center mt-2">Photo shoot</h5>
+                    </div>
+                    <div>
+                        <p class="text-center">July 23rd 2022,4:34 pm</p>
+                    </div>
+                    <div>
+                        <p class="text-center overflow" style="text-align: justify;">Google LLC is an American
+                            multinational technology company that focuses on search engine technology, online
+                            advertising, cloud computing, computer software</p>
+                    </div>
+                    <center><a href="/read"><button class="btn bg-danger">
+                                <p style="color:white;">Read more</p>
+                            </button></a></center>
+                </div>
+            </div> row end --> 
+</div>
+
+        </div> <!-- container end -->
+    </section>
+    <!-- IMAGES START END -->
+
+
+    <br><br>
+    <%- include('../footer.ejs')%>

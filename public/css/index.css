@@ -1,0 +1,123 @@
+/* 1 General */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background Color */
+    --bg-red: #d3282e;
+    --bg-white: #fff;
+    --bg-light-white: #f6f7f8;
+    --bg-yellow: #fdd800;
+    --bg-green: #009900;
+
+    /* Text Color */
+    --text-black: #1f1f1f;
+    --text-white: #fff;
+    --text-red: #d3282e;
+    --text-green: #009900;
+    --text-yellow: #fdd800;
+
+    /* Fonts */
+    --primary-font: 'Great Vibes', cursive;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+/*NAVBAR*/
+
+/*.header .navbar-nav li{
+    padding-left: -20%!important;
+}*/
+
+.header .navbar-brand img{
+    max-width: 90px;
+    height: auto;
+}
+
+.header .navbar-nav a{
+    font-size: 17px;
+    font-family: cursive;
+    font-weight: 500;
+    color: #049eb7;
+}
+
+
+.banner .carousel-item img{
+    margin-top: 92px;
+}
+
+
+
+.images img{
+    border-radius: 13px;
+}
+.images h5{
+    font-family: cursive;
+    font-weight: bold;
+    color: #60748b;
+}
+
+
+
+
+
+.images p{
+    color: #049eb7;
+}
+
+
+.loginban input{
+    width: 40%;
+}
+.loginban button{
+    width: 38%;
+}
+
+
+
+
+.footer .foot p{
+    color: #049eb7;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.footer p{
+    color: white;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.navbar-collapse{
+    margin-right: 30px;
+}
+
+
+
+.loginban{
+    background: url(../images/blankpaper.jpg);
+    width: 100%;
+    height: 640px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.dash li:hover{
+    background: black;
+}
+
+.dash li{
+    border: 1px whitesmoke solid;
+    border-radius: 5px;
+    background: whitesmoke;
+    margin-top: 2px;
+    padding-left: 12px;
+}
